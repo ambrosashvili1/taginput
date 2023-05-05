@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    color: #fff;
+    background-color: pink;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(216deg, pink, pink);
+}
+
+.container .wrapper{
+    width: 20rem;
+    padding: 0 .2rem;
+    background: white;
+    border-radius: .5rem;
+    color: rgb(0 0 0 / 90%);
+}
+
+.container .wrapper .header {
+    display: flex;
+    margin-top: .4rem;
+    margin-left: .8rem;
+    align-items: center;
+    color: rgb(0 0 0 / 90%);
+}
+
+.container .wrapper .header i {
+    margin-right: .2rem;
+}
+
+.container .wrapper .body p {
+    font-size: .8rem;
+    margin-left: .8rem;
+}
+
+.input-form ul {
+    cursor: text;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .4rem;
+    align-items: center;
+    margin: .4rem .4rem;
+    border-radius: .4rem;
+    transition: border .2s ease-in-out;
+    border: 2px solid rgb(0 0 0 / 20%);
+}
+
+.input-form ul li {
+    margin: .4rem .2rem;
+    list-style: none;
+    padding: .2rem .4rem;
+    border-radius: .3rem;
+    background: rgb(0 0 0 / 5%);
+}
+
+.input-form ul li i {
+    cursor: pointer;
+    border-radius: 50rem;
+    padding: .2rem .3rem;
+    color: rgb(0 0 0 / 30%);
+}
+
+.input-form ul li i:hover {
+    background: rgb(0 0 0 / 10%);
+}
+
+.input-form ul.focus {
+    border: 2px solid pink;
+}
+
+.input-form ul input {
+    flex: 1;
+    height: 2rem;
+    border: none;
+    outline: none;
+}
+
+.clearAll{
+    border: 0;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: .2rem;
+    margin-right: 1rem;
+    padding: .4rem 1rem;
+    border-radius: .4rem;
+    margin-bottom: .6rem;
+    background: pink;
+    transition: color .2s ease-in-out, background.2s ease-in-out;
+}
+
+.clearAll:hover {
+    background: pink;
+}
+
+.clearAll:focus {
+    outline-offset: 2px;
+    background: pink;
+    outline: 2px solid pink;
+}
